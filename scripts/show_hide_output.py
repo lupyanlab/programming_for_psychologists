@@ -6,7 +6,7 @@ import re
 import sys
 
 # Find all files to work with.
-path_to_notebooks = '/srv/projects/intro_programming/intro_programming/notebooks/'
+path_to_notebooks = '../notebooks/'
 filenames = []
 for filename in os.listdir(path_to_notebooks):
     if '.html' in filename and filename != 'index.html':
