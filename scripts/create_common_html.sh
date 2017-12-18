@@ -60,7 +60,7 @@ printf "\n  Converted files.\n"
 # Go through each html file, changing all internal links so they point to these
 #  raw html files, rather than IPython Notebook Viewer files.
 printf "\nConverting internal links to point to html files..."
-find "$path_to_notebooks" -iname '*.html' | xargs sed -i 's/http:\/\/nbviewer.ipython.org\/urls\/raw.github.com\/ehmatthes\/intro_programming\/master\/notebooks\///g'
+find "$path_to_notebooks" -iname '*.html' | xargs sed -i 's/http:\/\/nbviewer.ipython.org\/urls\/raw.github.com\/lupyanlab\/programming_for_psychologists\/master\/notebooks\///g'
 find "$path_to_notebooks" -iname '*.html' | xargs sed -i 's/.ipynb/.html/g'
 printf "\n  Converted links.\n"
 
