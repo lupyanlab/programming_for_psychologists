@@ -84,7 +84,7 @@ def check_links(filename, links, bad_links, links_tested):
 
 # Location of html files
 #  Assume all files in this directory, no nesting
-root_dir = '/srv/projects/intro_programming/intro_programming/notebooks/'
+root_dir = '../notebooks/'
 
 # Get all html filenames in this directory.
 #  Use os.walk if files end up nested.
@@ -96,7 +96,7 @@ for filename in os.listdir(root_dir):
 
 # Start a server locally, in the notebooks directory.
 print("Starting server...")
-cmd = 'chdir /srv/projects/intro_programming/intro_programming/notebooks/ && '
+cmd = 'chdir ../notebooks/ && '
 cmd += 'python -m SimpleHTTPServer'
 pro = subprocess.Popen(cmd, shell=True, preexec_fn=os.setsid)
 
