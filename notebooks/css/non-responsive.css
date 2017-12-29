@@ -9,7 +9,11 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
+   width: 970px !important;
 }
+
+
+
 
 /* Finesse the page header spacing */
 .page-header {
@@ -29,7 +33,7 @@ body {
 /* Reset the container */
 .container {
   max-width: none !important;
-  width: 970px;
+  width: 970px !important;
 }
 
 /* Demonstrate the grids */
@@ -44,8 +48,8 @@ body {
 
 .container .navbar-header,
 .container .navbar-collapse {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
 /* Always float the navbar header */
