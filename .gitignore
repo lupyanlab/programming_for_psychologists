@@ -5,5 +5,3 @@ notes/*
 notebooks/*.html*
 notebooks/__pycache__
 notebooks/my_templates/ignored_templates
-
-notebooks/Untitled1.ipynb
