@@ -1,5 +1,7 @@
 # TODO
-- [ ] Update Installation info on Github
-- [ ] Update pointers to mac/windows Acandonda installation instructions (virtuan env for psychopy); if no win<v10 no need for cygwin
-- [ ] Port exercise index from old class site
-- [ ] Update linux crash course (cd, wildcards, cat, grep, >, more, |, aliasing commands)
+- [x] Update Installation info on Github
+- [x] Update pointers to mac/windows Acandonda installation instructions (virtuan env for psychopy)
+- [x] Port exercise index from old class site
+- [ ] Update all exercises
+- [ ] Link to screencasts
+- [ ] Update linux crash course 

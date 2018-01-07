@@ -70,10 +70,10 @@ python "$prefix"remove_input_references.py
 wait
 
 # Build index page.
-printf "\nBuilding index page...\n"
-python "$prefix"build_index.py
-wait
-printf "  Built index page.\n"
+# printf "\nBuilding index page...\n"
+# python "$prefix"build_index.py
+# wait
+# printf "  Built index page.\n"
 
 #  Build all exercises page.
 # DEV: Holding off on this until project is more mature,

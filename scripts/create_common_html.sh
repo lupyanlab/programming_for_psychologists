@@ -59,8 +59,10 @@ printf "\nConverting raw .ipynb files to raw .html files...\n"
 
 #convert to html using a custom template that includes a table of contents sidebar
 cd "$path_to_notebooks" && jupyter nbconvert --template my_templates/toc2.tpl *.ipynb
-
 printf "\n  Converted files.\n"
+
+
+cp index.html "$path_to_notebooks"/my_templates/index_body.html
 
 # Go through each html file, changing all internal links so they point to these
 #  raw html files, rather than IPython Notebook Viewer files.
@@ -69,5 +71,9 @@ find "$path_to_notebooks" -iname '*.html' | xargs sed -i 's/http:\/\/nbviewer.ip
 find "$path_to_notebooks" -iname '*.html' | xargs sed -i 's/.ipynb/.html/g'
 printf "\n  Converted links.\n"
 
+
 # Return to original directory, so calling script's working dir does not change.
 cd $execution_path
+
+
+
