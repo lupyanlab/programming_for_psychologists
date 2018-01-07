@@ -88,5 +88,5 @@ sed -i -e 's/href="css/href="notebooks\/css/g' "$path_to_notebooks"/index.html
 sed -i -e 's/<li><a href="/<li><a href="notebooks\//g' "$path_to_notebooks"/index.html
 
 
-printf "  Copying index page to root\n"
-cp "$path_to_notebooks"/index.html ../
+printf "  Move index page to root\n"
+mv "$path_to_notebooks"/index.html ../
