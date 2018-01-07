@@ -80,3 +80,13 @@ wait
 #        but don't want to lose sight of it.
 #python "$prefix"build_all_exercises_page.py
 #wait
+
+printf "  Substituting link pointers in the index page.\n"
+sed -i -e 's/src="js\//src="notebooks\/js\//g' "$path_to_notebooks"/index.html
+sed -i -e 's/href="css/href="notebooks\/css/g' "$path_to_notebooks"/index.html
+sed -i -e 's/href="css/href="notebooks\/css/g' "$path_to_notebooks"/index.html
+sed -i -e 's/<li><a href="/<li><a href="notebooks\//g' "$path_to_notebooks"/index.html
+
+
+printf "  Copying index page to root\n"
+cp "$path_to_notebooks"/index.html ../
