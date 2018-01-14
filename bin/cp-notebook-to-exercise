@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# cp-notebook-to-exercise [notebook] [exercise-dir]
+set -x
+cp notebooks/$1 assignments/$2/
