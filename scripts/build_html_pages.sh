@@ -39,13 +39,14 @@ printf "\npath to notebooks: $path_to_notebooks\n"
 source "$path_to_scripts"create_common_html.sh
 wait
 
+
 # Add stylesheet to make output display initially on Mapping Global Earthquake Activity.
-printf "\n\nMake output display by default on specified notebooks..."
-#before_string="<link rel='stylesheet' href='css\/site_styles.css'>"
-before_string="<link href='css\/site_styles.css' rel='stylesheet'>"
-css_js_link_string="<link rel='stylesheet' href='css\/show_all_style.css'>\n"
-sed -i "s/$before_string/$before_string\n\n$css_js_link_string\n/" "$path_to_notebooks/visualization_earthquakes.html"
-printf "\n  Finished.\n\n"
+# printf "\n\nMake output display by default on specified notebooks..."
+# #before_string="<link rel='stylesheet' href='css\/site_styles.css'>"
+# before_string="<link href='css\/site_styles.css' rel='stylesheet'>"
+# css_js_link_string="<link rel='stylesheet' href='css\/show_all_style.css'>\n"
+# sed -i "s/$before_string/$before_string\n\n$css_js_link_string\n/" "$path_to_notebooks/visualization_earthquakes.html"
+# printf "\n  Finished.\n\n"
 
 # Add elements to toggle output on each page.
 printf "Adding ability to toggle output on each page...\n"
@@ -70,13 +71,23 @@ python "$prefix"remove_input_references.py
 wait
 
 # Build index page.
-printf "\nBuilding index page...\n"
-python "$prefix"build_index.py
-wait
-printf "  Built index page.\n"
+# printf "\nBuilding index page...\n"
+# python "$prefix"build_index.py
+# wait
+# printf "  Built index page.\n"
 
 #  Build all exercises page.
 # DEV: Holding off on this until project is more mature,
 #        but don't want to lose sight of it.
 #python "$prefix"build_all_exercises_page.py
 #wait
+
+printf "  Substituting link pointers in the index page.\n"
+sed -i -e 's/src="js\//src="notebooks\/js\//g' "$path_to_notebooks"/index.html
+sed -i -e 's/href="css/href="notebooks\/css/g' "$path_to_notebooks"/index.html
+sed -i -e 's/href="css/href="notebooks\/css/g' "$path_to_notebooks"/index.html
+sed -i -e 's/<li><a href="/<li><a href="notebooks\//g' "$path_to_notebooks"/index.html
+
+
+printf "  Move index page to root\n"
+mv "$path_to_notebooks"/index.html ../

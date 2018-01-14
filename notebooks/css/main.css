@@ -1,0 +1,168 @@
+/*extracted from https://gist.github.com/magican/5574556*/
+
+
+/*
+Most colors definded here will be used on export, but can be overwritted in 
+the livenotebook by modyfying notebook.json or selecting a color in the 
+nbextension-configurator
+*/
+
+
+
+/*background color for links when you mouse over it */
+#toc-wrapper li > span:hover {
+  background-color: #DAA520;
+}
+
+#toc a {
+  color: #333333;  /* default - alterable via nbextension-configurator */
+  text-decoration: none;
+}
+#navigate_menu li > span:hover {background-color: #f1f1f1}
+
+
+/* Move menus and tooolbar to the left, following @Kevin-McIsaac suggestion
+This is now done in javascript, if the relevant option is selected
+div#menubar-container, div#header-container {
+width: auto;
+padding-left: 20px;
+}*/
+
+#navigate_menu {
+  list-style-type: none;
+  max-width: 800px;
+  min-width: 100px;
+  width: 250px;
+  overflow: auto;
+}
+
+
+#navigate_menu a {
+  list-style-type: none;
+  color: #333333;    /* default - alterable via nbextension-configurator */
+  text-decoration: none;
+}
+
+#navigate_menu li  {
+  padding-left: 0px;
+  clear: both;
+  list-style-type: none;
+}
+
+#navigate_menu > .toc-item,
+#navigate_menu ul {
+  padding-left: 0px;
+}
+
+.toc {
+  max-height: 500px;
+  padding: 0px;
+  overflow-y: auto;
+  font-weight: normal;
+  color: #333333;    /* default - alterable via nbextension-configurator */
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.toc ul.toc-item {
+    list-style-type: none;
+    padding: 0;
+    margin:  0;
+}
+
+.float-wrapper {
+  position: fixed !important;
+  top: 120px;
+  max-width:600px;
+  right: 20px;
+  border: thin solid rgba(0, 0, 0, 0.38);
+  border-radius: 5px;
+  padding:10px;
+  background-color: #fff;   /* default - alterable via nbextension-configurator */
+  opacity: .8;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+    height: 100%;
+    left: 5px;
+    padding-top: 40px;
+    position: fixed !important;
+    width: 212px;
+    max-width: 28%;
+    background-color: #fff;   /* default - alterable via nbextension-configurator */
+    border-style: solid;
+    border-color: #eeeeee;  /* default - alterable via nbextension-configurator */
+    opacity: .99;
+    overflow: hidden;
+}
+
+#toc-wrapper.closed {
+  min-width: 100px;
+  width: auto;
+  transition: width;
+}
+#toc-wrapper:hover{
+  opacity: 1;
+}
+#toc-wrapper .header {
+  font-size: 18px;
+  font-weight: bold;
+}
+#toc-wrapper .hide-btn {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+#toc-wrapper .reload-btn {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+#toc-wrapper .number_sections-btn {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+/* on scroll style */
+.highlight_on_scroll {
+    border-left: solid 4px blue;
+}
+/* don't waste so much screen space... */
+
+/*
+ .toc .toc-item .toc-item {
+  padding-left: 1em;
+}
+*/
+
+.toc-item li { margin:0; padding:0; color:black }
+.toc-item li > span { display:block }
+.toc-item li > span { padding-left:0em }
+.toc-item li li > span { padding-left:1em }
+.toc-item li li li > span { padding-left:2em }
+.toc-item li li li li > span { padding-left:3em }
+.toc-item li li li li li > span { padding-left:4em }
+.toc-item li li li li li li > span { padding-left:5em }
+
+.toc-item-num {
+    font-style: normal;
+}
+
+#toc-wrapper .toc-item-num {
+    font-style: normal;
+    font-family: Georgia, Times New Roman, Times, serif;
+    color: black;  /* default - alterable via nbextension-configurator */
+}
+
+/*
+These colors are now specified in js, after reading the extension's config stored in system
+and updated using the nbextension-configurator
+.toc-item-highlight-select  {background-color: Gold}
+.toc-item-highlight-execute  {background-color: red}
+.toc-item-highlight-execute.toc-item-highlight-select   {background-color: Gold} */
+
+.toc-item .fa-fw:first-child {
+  cursor: pointer;
+}

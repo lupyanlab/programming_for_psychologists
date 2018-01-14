@@ -16,7 +16,8 @@
 
 <!-- <link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css"> -->
 
-<link rel="stylesheet" type="text/css" href="/Users/glupyan/Library/Jupyter/nbextensions/toc2/main.css">
+<!-- <link rel="stylesheet" type="text/css" href="/Users/glupyan/Library/Jupyter/nbextensions/toc2/main.css"> -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 <style type="text/css">
 @font-face {
