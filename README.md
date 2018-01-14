@@ -7,7 +7,6 @@ This project is based on [introtopython.org](http://introtopython.org), an open 
 
 You can view the raw notebooks using the Jupyter Notebook Viewer [(home page)](http://nbviewer.ipython.org/urls/raw.github.com/lupyanlab/programming_for_psychologists/master/notebooks/index.ipynb). The content is similar on both sites, but the [class](http://sapir.psych.wisc.edu/programming_for_psychologists/) version is easier to navigate and has some dynamic features such as collapsible Python output and a table of contents sidebar.
 
-
 ## Exercise repos
 
 All exercise repos are linked to this repo as submodules. By default,
@@ -26,6 +25,13 @@ branch on all submodules, run the following git command.
 
 ```bash
 git submodule foreach git checkout master
+```
+
+### Updating files in exercise submodules
+
+```bash
+# Copies notebooks/Exercise1-square.ipynb to assignments/exercise-1/
+bin/cp-notebook-to-exercise Exercise1-square.ipynb exercise-1
 ```
 
 ## Install
