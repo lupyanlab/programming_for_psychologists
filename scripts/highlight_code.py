@@ -30,8 +30,12 @@
 # ehmatthes@gmail.com, @ehmatthes
 
 
-import os, sys
+import os
 import ast
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 
 print("\nHighlighting code...")
 

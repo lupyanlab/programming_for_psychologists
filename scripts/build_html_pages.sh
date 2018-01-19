@@ -9,7 +9,7 @@
 #  '--initial'.
 #
 # Core of script involves running
-#    'ipython nbconvert --template intro_python_base.tpl'
+#    'jupyter nbconvert --template intro_python_base.tpl'
 #   Then adds appropriate sections through other templates, and scripting.
 #     Also modifies some styles for better static html output.
 #   Script is meant to be fairly straightforward to modify, so users can 

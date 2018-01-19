@@ -1,9 +1,12 @@
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # This script runs through all the html files in notebooks/, and adds
 #  in code to allow toggling of output.
 
 import os
 import re
-import sys
 
 # Find all files to work with.
 path_to_notebooks = '../notebooks/'

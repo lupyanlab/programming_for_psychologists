@@ -5,6 +5,8 @@
 
 import os
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 print("\nStripping input reference numbers from code cells...")
 
