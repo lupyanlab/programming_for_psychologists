@@ -38,9 +38,8 @@ bin/cp-notebook-to-exercise Exercise1-square.ipynb exercise-1
 
 ```bash
 # Recommended: Install the required packages in a virtual environment
-pip2 install virtualenv
-virtualenv ~/.venvs/psych711
-source ~/.venvs/psych711/bin/activate
+conda create -n psychopy python=2
+source activate psychopy
 
 # Install the required python packages
 pip install -r requirements.txt
@@ -50,8 +49,25 @@ pip install -r requirements.txt
 jupyter contrib nbextension install --user
 
 # Setup the nbextension browser interface
-# https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator 
+# https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
+```
+
+### Running R in jupyter notebooks
+
+To run R in jupyter notebooks, first install an R kernel to the conda environment.
+
+```bash
+# Install an R kernel in the conda environment
+conda install --channel r r-irkernel
+```
+
+Then install the required R packages.
+
+```R
+install.packages("devtools")
+devtools::install_github("IRkernel/IRkernel")
+IRkernel::installspec()
 ```
 
 ## Build the HTML pages
