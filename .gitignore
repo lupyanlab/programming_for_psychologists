@@ -7,3 +7,4 @@ notebooks/*.html*
 notebooks/__pycache__
 notebooks/my_templates/ignored_templates
 notebooks/*dynamic.ipynb
+notebooks/Untitled.ipynb
