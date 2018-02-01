@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Clone an empty repo, populate it with exercise files, and push the changes.
+set -x
+username=$1
+exercise=$2
+repo=${exercise}-${username}
+git submodule add https://github.com/programming-for-psychologists/${repo}
+cp ../assignments/${exercise}/* ${repo}/
+cd ${repo}
+git add .
+git commit -m "Manually add files to ${username}'s Exercise 2 repo"
+git push
+cd ../
