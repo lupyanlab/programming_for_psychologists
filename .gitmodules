@@ -1,12 +1,9 @@
 [submodule "assignments/exercise-1"]
 	path = assignments/exercise-1
-	url = https://github.com/programming-for-psychologists/exercise-1
+	url = https://github.com/programming-for-psychologists/exercise-1/tree/fbaeed5b6608bb0c75d6cb83f822d1fc74c46da6
 [submodule "assignments/exercise-2"]
 	path = assignments/exercise-2
-	url = https://github.com/programming-for-psychologists/exercise-2.git
-[submodule "assignments/exercise-4"]
-	path = assignments/exercise-4
-	url = https://github.com/programming-for-psychologists/exercise-3.git
+	url = https://github.com/programming-for-psychologists/exercise-2/tree/94d5640a0e11f68b25672543289744fef0f40c2a
 [submodule "assignments/exercise-3"]
 	path = assignments/exercise-3
-	url = https://github.com/programming-for-psychologists/exercise-3.git
+	url = https://github.com/programming-for-psychologists/exercise-3/tree/8ee89d97dff8da63d1f82c6daff20082c6d6c312
