@@ -11,9 +11,32 @@ You can view the raw notebooks using the Jupyter Notebook Viewer [(home page)](h
 
 Here are the steps for creating a new Github Classroom assignment.
 
-1. (Optional) Create a new repo on Github. This repo will be used as the "base" repo that all students will receive when they start on this assignment. For example, [github.com/programming-for-psychologists/exercise-1](https://github.com/programming-for-psychologists/exercise-1) was created as the base repo for Exercise 1. If you do not create a new repo, you can still make the assignment, but all students will start off with an empty repo.
-1. Create the Github Classroom Assignment. Go to the Classroom page for the Programming for Psychologists classroom [here](https://classroom.github.com/classrooms/35153597-programming-for-psychologists). Select "New assignment". Give the assignment a title and a repository prefix. For Exercise 1, both the title and the repository prefix were "exercise-1". In the question for "Add your starter code", find the repo you created above. Then select "Create Assignment".
-1. After you have created the assignment, you receive a link to distribute to everyone in the class. When they click on this link, they will be prompted to sign in to Github.com, and it will create a clone of the base repo for their use.
+### Create a new repo on Github.
+
+This repo will be used as the "base" repo that all students will receive when they start on this assignment. For example, [github.com/programming-for-psychologists/exercise-1](https://github.com/programming-for-psychologists/exercise-1) was created as the base repo for Exercise 1. If you do not create a new repo, you can still make the assignment, but all students will start off with an empty repo.
+
+To create a new repo on your local computer, move to where you want to put the repo, and run `git init`. For example, to make the exercise-1 repo, you would run `git init exercise-1`. Now add the starter files to this repo, and commit them.
+
+```bash
+git init exercise-1
+cd exercise-1
+# add files to exercise-1/
+git add .
+git commit -m "Starter files"
+```
+
+To create an endpoint for the new repo, go to [github.com/programming-for-psychologists](https://github.com/programming-for-psychologists) and click on "New". Now you configure the new repo to push to the new location.
+
+```bash
+git remote add origin https://github.com/programming-for-psychologists/exercise-1
+git push -u origin master
+```
+
+### Create the Github Classroom Assignment.
+
+Go to the Classroom page for the Programming for Psychologists classroom [here](https://classroom.github.com/classrooms/35153597-programming-for-psychologists). Select "New assignment". Give the assignment a title and a repository prefix. For Exercise 1, both the title and the repository prefix were "exercise-1". In the question for "Add your starter code", find the repo you created above. Then select "Create Assignment".
+
+After you have created the assignment, you receive a link to distribute to everyone in the class. When they click on this link, they will be prompted to sign in to Github.com, and it will create a clone of the base repo for their use.
 
 ### Debugging Github Classroom
 
@@ -29,7 +52,6 @@ bin/populate-exercise pedmiston exercise-1
 # Then moves files from ./assignments/exercise-1/* into the repo.
 # Then pushes the new files to Github.com
 ```
-
 
 ## Exercise repos
 
