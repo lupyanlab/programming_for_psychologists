@@ -1,8 +1,0 @@
-The Bochum Emotional Stimulus Set (BESST)
-
-Here you can download the BESST stimuli and validation data. Please use the following reference when you cite the BESST:
-Thoma P., Soria Bauser D., Suchan B. (2012).
-The Bochum Emotional Stimulus Set (BESST) - A pilot validation study of a stimulus set containing bodies and faces from frontal and averted view.
-Psychiatry Research
-
-http://www.ruhr-uni-bochum.de/neuropsy/BESST.html
