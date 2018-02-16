@@ -2,3 +2,4 @@ jupyter==1.0.0
 jupyter-contrib-nbextensions==0.3.3
 requests
 matplotlib
+github3.py

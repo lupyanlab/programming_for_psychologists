@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+import argparse
+import github3
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('assignment')
+    parser.add_argument('students', nargs='+')
+    parser.add_argument('--github-user', '-u')
+    parser.add_argument('--github-pass', '-p')
+    args = parser.parse_args()
+
+    user = github3.login(args.github_user, args.github_pass)
+    org_name = 'programming-for-psychologists'
+    course = user.organization(org_name)
+
+    repo_str = '{assignment}-{student}'
+    student_repos = [repo_str.format(assignment=args.assignment, student=student)
+                     for student in args.students]
+
+    for repo in course.repositories():
+        if repo.name in student_repos:
+            success = repo.delete()
+            if success:
+                print('successfully deleted {repo}'.format(repo=repo.name))
+            else:
+                print('failed to delete repo {repo}'.format(repo=repo.name))
