@@ -16,3 +16,6 @@
 [submodule "projects/project1"]
 	path = projects/project1
 	url = https://github.com/programming-for-psychologists/project1.git
+[submodule "assignments/exercise-7"]
+	path = assignments/exercise-7
+	url = https://github.com/programming-for-psychologists/exercise-7.git
