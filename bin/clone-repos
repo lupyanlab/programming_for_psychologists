@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Usage: clone-repos [base_repo_name] [usernames_file="github-usernames.txt"] [target_dir="assignments"]
+#
+# Examples:
+#
+# 1. Clone exercise 5 repos to assignments directory. By default gets GitHub usernames from "github-usernames.txt"
+#     $ clone-repos exercise-5
+#
+# 2. Clone project 1 repos:
+#     $ clone-repos project1 project1-team-names.txt project1
+base_repo_name=$1
+usernames_file=${2:-github-usernames.txt}
+target_dir=${3:-assignments}
+while read username; do
+  repo=${base_repo_name}-${username}
+  git clone https://github.com/programming-for-psychologists/${repo} ${target_dir}/${repo}
+done < ${usernames_file}

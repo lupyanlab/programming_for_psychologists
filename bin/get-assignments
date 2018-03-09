@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Usage: get-assignments exercise-5
-exercise=$1
-while read username; do
-  repo=${exercise}-${username}
-  git clone https://github.com/programming-for-psychologists/${repo} assignments/${repo}
-done < github-usernames.txt
