@@ -19,3 +19,21 @@
 [submodule "assignments/exercise-7"]
 	path = assignments/exercise-7
 	url = https://github.com/programming-for-psychologists/exercise-7.git
+[submodule "projects/project1-kittycoders"]
+	path = projects/project1-kittycoders
+	url = https://github.com/programming-for-psychologists/project1-kittycoders
+[submodule "projects/project1-the-oompa-loompas"]
+	path = projects/project1-the-oompa-loompas
+	url = https://github.com/programming-for-psychologists/project1-the-oompa-loompas
+[submodule "projects/project1-pink-freud"]
+	path = projects/project1-pink-freud
+	url = https://github.com/programming-for-psychologists/project1-pink-freud
+[submodule "projects/project1-psychopython-and-the-holy-grail"]
+	path = projects/project1-psychopython-and-the-holy-grail
+	url = https://github.com/programming-for-psychologists/project1-psychopython-and-the-holy-grail
+[submodule "projects/project1-team-1"]
+	path = projects/project1-team-1
+	url = https://github.com/programming-for-psychologists/project1-team-1
+[submodule "projects/project1-syntaxerrors"]
+	path = projects/project1-syntaxerrors
+	url = https://github.com/programming-for-psychologists/project1-syntaxerrors

@@ -3,4 +3,4 @@ the-oompa-loompas
 pink-freud
 psychopython-and-the-holy-grail
 team-1
-syntax-errors
+syntaxerrors

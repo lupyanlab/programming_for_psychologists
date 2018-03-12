@@ -11,7 +11,8 @@
 base_repo_name=$1
 usernames_file=${2:-github-usernames.txt}
 target_dir=${3:-assignments}
+git_command=${4:-clone}
 while read username; do
   repo=${base_repo_name}-${username}
-  git clone https://github.com/programming-for-psychologists/${repo} ${target_dir}/${repo}
+  git ${git_command} https://github.com/programming-for-psychologists/${repo} ${target_dir}/${repo}
 done < ${usernames_file}
