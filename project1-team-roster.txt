@@ -1,0 +1,22 @@
+- team-1:
+    - alexmelman
+    - mstqat
+    - ianjohnston
+- the-oompa-loompas:
+    - pabloinsente
+    - m-borman
+- psychopython-and-the-holy-grail:
+    - dabacon1
+    - nmvasq
+- syntaxerrors:
+    - ruimengrui
+    - MengguoJ
+    - hettieroebuck
+- pink-freud:
+    - steveSchwering
+    - sashasomms
+    - menendez95
+- kittycoders:
+    - sbrown027
+    - kwoodard2
+

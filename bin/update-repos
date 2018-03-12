@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -x
+while read team_name; do
+    repo=project1-${team_name}
+    cd projects/${repo}
+    git remote add upstream https://github.com/programming-for-psychologists/project1.git
+    git pull upstream master
+    git push origin master
+    cd ../../
+done < "project1-team-names.txt"
