@@ -19,3 +19,12 @@
 [submodule "assignments/exercise-7"]
 	path = assignments/exercise-7
 	url = https://github.com/programming-for-psychologists/exercise-7.git
+[submodule "assignments/exercise-8"]
+	path = assignments/exercise-8
+	url = https://github.com/programming-for-psychologists/exercise-8.git
+[submodule "assignments/exercise-9"]
+	path = assignments/exercise-9
+	url = https://github.com/programming-for-psychologists/exercise-9.git
+[submodule "assignments/exercise-10"]
+	path = assignments/exercise-10
+	url = https://github.com/programming-for-psychologists/exercise-10.git
