@@ -40,14 +40,6 @@ source "$path_to_scripts"create_common_html.sh
 wait
 
 
-# Add stylesheet to make output display initially on Mapping Global Earthquake Activity.
-# printf "\n\nMake output display by default on specified notebooks..."
-# #before_string="<link rel='stylesheet' href='css\/site_styles.css'>"
-# before_string="<link href='css\/site_styles.css' rel='stylesheet'>"
-# css_js_link_string="<link rel='stylesheet' href='css\/show_all_style.css'>\n"
-# sed -i "s/$before_string/$before_string\n\n$css_js_link_string\n/" "$path_to_notebooks/visualization_earthquakes.html"
-# printf "\n  Finished.\n\n"
-
 # Add elements to toggle output on each page.
 printf "Adding ability to toggle output on each page...\n"
 python "$prefix"show_hide_output.py
