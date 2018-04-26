@@ -31,3 +31,6 @@
 [submodule "assignments/exercise-11"]
 	path = assignments/exercise-11
 	url = https://github.com/programming-for-psychologists/exercise-11
+[submodule "assignments/exercise-14"]
+	path = assignments/exercise-14
+	url = https://github.com/programming-for-psychologists/exercise-14
