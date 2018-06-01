@@ -1,0 +1,36 @@
+[submodule "assignments/exercise-1"]
+	path = assignments/exercise-1
+	url = https://github.com/programming-for-psychologists/exercise-1/
+[submodule "assignments/exercise-2"]
+	path = assignments/exercise-2
+	url = https://github.com/programming-for-psychologists/exercise-2/
+[submodule "assignments/exercise-3"]
+	path = assignments/exercise-3
+	url = https://github.com/programming-for-psychologists/exercise-3/
+[submodule "assignments/exercise-4"]
+	path = assignments/exercise-4
+	url = https://github.com/programming-for-psychologists/exercise-4.git
+[submodule "assignments/exercise-5"]
+	path = assignments/exercise-5
+	url = https://github.com/programming-for-psychologists/exercise-5.git
+[submodule "projects/project1"]
+	path = projects/project1
+	url = https://github.com/programming-for-psychologists/project1.git
+[submodule "assignments/exercise-7"]
+	path = assignments/exercise-7
+	url = https://github.com/programming-for-psychologists/exercise-7.git
+[submodule "assignments/exercise-8"]
+	path = assignments/exercise-8
+	url = https://github.com/programming-for-psychologists/exercise-8.git
+[submodule "assignments/exercise-9"]
+	path = assignments/exercise-9
+	url = https://github.com/programming-for-psychologists/exercise-9.git
+[submodule "assignments/exercise-10"]
+	path = assignments/exercise-10
+	url = https://github.com/programming-for-psychologists/exercise-10.git
+[submodule "assignments/exercise-11"]
+	path = assignments/exercise-11
+	url = https://github.com/programming-for-psychologists/exercise-11
+[submodule "assignments/exercise-14"]
+	path = assignments/exercise-14
+	url = https://github.com/programming-for-psychologists/exercise-14
